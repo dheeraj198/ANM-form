@@ -1,0 +1,199 @@
+<html>
+<script>
+function maketext()
+{
+if(document.getElementById("y").checked==true)
+{var para=document.createElement("p");
+para.innerHTML="Nature Of Illness";
+para.id="para";
+document.getElementById("i").appendChild(para);
+var text=document.createElement("textarea");
+text.id="text";
+document.getElementById("i").appendChild(text);
+
+}
+
+if(document.getElementById("y").checked!=true)
+{
+document.getElementById("para").remove();
+
+document.getElementById("text").remove();
+}
+}
+
+</script>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="white.jpg">
+<center><h1>Annexure 2</h1></center>
+<form action="update" method="POST">
+<div>
+<h2 >Background Information</h2>   
+<hr color="yellow">  
+<div class="main">
+<table class='a' cellpadding="10" align="center" cellspacing=""> 
+	<tr>
+		<td  class="mainpoint">Name Of The Child:</td> 
+		<td><input type="text" placeholder="Child Name" name=name required></input></td></tr>
+		<tr class="b">
+		<td  class="mainpoint">Age:</td>
+		<td>
+<table>
+Years:<select  id="one" name="one">
+<option value="null">--Select an Year--</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+<br><br></table><table>
+Months:<select disabled="disabled" id="two" name="two">
+<option value="null">--Select a Month--</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+</select>
+<br><br></table>
+<table>
+Days:<select disabled="disabled" id="three" name="three">
+<option value="null">--Select no. of Days--</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+</select><br>
+		</td>
+	</tr></table>
+<tr>
+	<td  class="mainpoint">Gender:</td>
+	<td>
+		<input type="radio" name=sex value="male">Male 
+        <input type="radio" name=sex value="female">Female
+    </td></tr>
+    <div class="address"></div>
+    <tr>
+    	<td  class="mainpoint">Address:</td>
+    	<td>Pincode
+    	<input type="pincode" name="pincode" placeholder="Pincode">
+        <br><br>
+        City 
+    	<input type="name" name="City" placeholder="City" required>
+        <br><br>
+    	State   &nbsp&nbsp&nbsp
+    	<input type="name" name="State" placeholder="State" required>
+        <br><br>
+    	Locality
+    	<input type="name" name="Locality" placeholder="Locality" required>
+        <br><br>
+    	Village
+    	<textarea rows="2" columns="2" placeholder="Village" name="Village" required></textarea>
+    </tr></div>
+
+    <tr>
+    	<td>Order of Birth:</td>
+    	<td>
+            <input type="radio" name="order" value="1">1  &nbsp&nbsp
+            <input type="radio" name="order" value="2">2  &nbsp&nbsp
+            <input type="radio" name="order" value="3">3  &nbsp&nbsp
+            <input type="radio" name="order" value="4">4  &nbsp&nbsp
+            <input type="radio" name="order" value="5">5  &nbsp&nbsp
+            <input type="radio" name="order" value="more">More
+
+    	</td>
+    </tr>
+    <tr>
+    	<td>Category:</td>
+    	<td>
+    		<input type="radio" name="caste" value="SC">SC    &nbsp&nbsp
+            <input type="radio" name="caste" value="ST">ST    &nbsp&nbsp
+            <input type="radio" name="caste" value="OBC">OBC  &nbsp&nbsp
+            <input type="radio" name="caste" value="General">General    &nbsp&nbsp
+        </td>
+    </tr>
+    <tr>
+    	<td>Immunization Status:</td>
+    	<td>
+    		<input type="checkbox" name="immunization" value="Penta 1">Penta 1    &nbsp&nbsp
+            <input type="checkbox" name="immunization" value="Penta 2">Penta 2    &nbsp&nbsp
+            <input type="checkbox" name="immunization" value="Penta 3">Penta 3    &nbsp&nbsp
+            <input type="checkbox" name="immunization" value="MR 1">MR 1          &nbsp&nbsp
+            <input type="checkbox" name="immunization" value="Mr Booster">MR Booster
+        </td>
+    </tr>
+    <tr>
+    	<td>Does Family Have a Below Poverty Line card(BPL)?</td>
+    	<td>
+    		<input type="radio" name="card" value="Yes">Yes             &nbsp&nbsp
+            <input type="radio" name="card" value="No">No               &nbsp&nbsp
+
+    	</td>
+    </tr>
+    <tr>
+    	<td>Weight (if recorded in the MCP card):</td>
+    	<td><input type="number" name="weight" placeholder="Weight"></td>
+    </tr>
+    <tr>
+    	<td>Growth Curve (fill for child less than 3 years; check MCP card) : </td>
+    	<td>
+    		<input type="checkbox" name="growth_curve" value="Green Zone">Green Zone
+            <input type="checkbox" name="growth_curve" value="Yellow Zone">Yellow Zone
+            <input type="checkbox" name="growth_curve" value="Orange Zone">Orange Zone
+        </td>
+    </tr>
+    <tr>
+    	<td>Any Past Illness?</td>
+    	<td>
+    		<div id="i">
+            <input type="radio" name="past_illness" id="y" onchange="maketext()" value="Yes">Yes<br>
+            <input type="radio" name="past_illness" onchange="maketext()" Value="No">No<br>
+           </div>
+        </td>
+    </tr></table>
+    <form action="2.2.html">
+        <span><center><br><input type="submit" class="submit" value="Submit"></center></span>
+    </form>
+    <script src="2a.js"></script>
+    <script src="2aa.js"></script>
+
+
+</body>
+
+</html>

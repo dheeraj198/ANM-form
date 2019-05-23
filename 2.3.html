@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2.3
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="white.jpg">
+	<h2>Details of treatment:</h2>
+	<hr color="yellow">
+	<table align="center" padding="25px" cellpadding="10">
+		<tr>
+			<td>Details of treatment:</td>
+		</tr>
+		<tr>
+			<td>Whether treatment for illness was taken or not?</td>
+				<td><input type="radio" name="treatment_taken" value="Yes">Yes<input type="radio" name="treatment_taken" value="No">No</td>
+			</td></tr>
+			<tr>
+				<td>If yes, where was the child treated:</td>
+			</tr>
+			<tr>
+				<td>Public Health Facility:</td>
+				<td>
+					<input type="radio" name="treatment_location" value="PHC">PHC<br>
+					<input type="radio" name="treatment_location" value="CHC">CHC<br>
+					<input type="radio" name="treatment_location" value="DH">DH<br>
+					<input type="radio" name="treatment_location" value="SDH/Taluqa Hospital">SDH/Taluqa Hospital<br>
+				</td>
+			</tr>
+			<tr><td>Private Hospital/ Nursing Home</td>
+				<td><input type="checkbox" name="treatment_location" value="Private Hospital/ Nursing Home" ></td>
+			</tr>
+			<tr>
+				<td>Qualified allopathic private practitioner</td>
+				<td> <input type="checkbox" name="treatment_location" value="Qualified allopathic private practitioner"></td>
+			</tr>
+			<tr>
+				<td>AYUSH practitioner</td>
+				<td><input type="checkbox" name="treatment_location" value="AYUSH practitioner"></td>
+			</tr>
+			<tr>
+				<td>Unqualified provider (quack, informal provider)</td>
+				<td><input type="checkbox" name="treatment_location" value="Unqualified provider (quack, informal provider) " ></td>
+			</tr>
+			<tr>
+				<td>Traditional healer </td>
+				<td><input type="checkbox" name="treatment_location" value="Traditional heale" ></td>
+			</tr>
+	</table>
+	<form action="2.4n.html">
+        <span><center><br><input type="submit" class="submit" value="Submit"></center></span>
+    </form>
+
+</body>
+</html>

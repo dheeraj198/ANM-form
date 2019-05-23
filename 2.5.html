@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2.5</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="white.jpg">
+	<h2>According to the respondent (parent, close family member), what was the cause of death?</h2>
+	<hr color="yellow">
+	<div class="size">
+	<table align="center" padding="25px" cellpadding="20">
+		<tr>
+			<td>According to the respondent (parent, close family member), what was the cause of death?</td>
+			<td><textarea  rows="6" cols="30" placeholder="Type to text..." name="reason"></textarea></td>
+		</tr>
+	</table>
+    </div>
+		<h2>At which level do you think the delay occurred?</h2>
+		<hr color="yellow">
+		<div class="size">
+	<table align="center" padding="25px" cellpadding="20">
+		<tr>
+			<td><b>1.Delay at home</b> (eg; seriousness of illness not recognized, treatment not sought, treatment sought at a late stage, family members did not allow treatment seeking)</td>
+			<td><input type="checkbox" name="delay" value="home"></td>
+		</tr>
+		<tr>
+			<td><b>2.Delay in transportation</b> (eg; transport facility not available, could not afford local transport, difficult /hilly terrain, long distance to the health facility)</td>
+			<td><input type="checkbox" name="delay" value="transportation"></td>
+		</tr>
+		<tr>
+			<td><b>3.Delay at facility level </b>  (eg; doctor/staff not available, drugs & equipment not available, delay in initiation of treatment)</td>
+			<td><input type="checkbox" name="delay" value="facility"></td>
+		</tr>
+	</table>
+	</div>
+	<h2>Based on your analysis of the situation in which the death took place, what according to you could have been done to avert this death?</h2>
+	<hr color="yellow">
+	<div class="size">
+	<table align="center" padding="25px" cellpadding="20">
+		<tr>
+			<td>Based on your analysis of the situation in which the death took place, what according to you could have been done to avert this death?</td>
+			<td><textarea name="advice" rows="8" cols="30" placeholder="Type to text..."></textarea></td>
+		</tr>
+	</table>
+    </div>
+	<form action="action.php">
+        <span><center><br><input type="submit" class="submit" value="Submit"></center></span>
+    </form>
+</body>
+</html>
